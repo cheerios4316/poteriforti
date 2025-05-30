@@ -1,0 +1,35 @@
+{
+  "name": "poteriforti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "composer install && npm install --verbose",
+    "build:tailwind": "npx tailwindcss -i ./tailwind/init.css -o ./public/dist/tailwind.css",
+    "build:ts": "npx tsc",
+    "build:webpack": "npx webpack",
+    "build:all": "npm run build:tailwind && npm run build:ts && npm run build:webpack",
+    "build:watch": "concurrently \"npx tsc --watch\" \"webpack --watch\" \"npx tailwindcss -i ./tailwind/init.css -o ./public/dist/tailwind.css --watch\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.15",
+    "autoprefixer": "^10.4.21",
+    "css-loader": "^7.1.2",
+    "jquery": "^3.7.1",
+    "mini-css-extract-plugin": "^2.9.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.15",
+    "@types/jquery": "^3.5.32",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.8",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
