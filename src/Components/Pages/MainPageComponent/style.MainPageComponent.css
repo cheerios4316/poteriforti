@@ -1,13 +1,13 @@
 li {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 li::marker {
-    content: '> ';
-    font-size: .8rem;
-    color: var(--color-orange-500);
+  content: "> ";
+  font-size: 0.8rem;
+  color: var(--color-orange-500);
 }
 
 ul {
-    row-gap: .5rem;
+  row-gap: 0.5rem;
 }
