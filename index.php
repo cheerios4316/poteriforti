@@ -24,3 +24,14 @@ $app
     ->setRouter($router)
     ->run()
 ;
+
+/**
+ * @todo STUFF I PROMISED IN THE MAIN PAGE BUT DOES NOT EXIST YET AND I HAVE TO MAKE
+ * 
+ * npx command to create project
+ *      then: npx command param to create blank project
+ * 
+ * npm command to cleanup example project
+ * 
+ * npm commands to create components and controllers
+ */

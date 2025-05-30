@@ -1,37 +1,40 @@
-const path = require('path');
-const CssPlugin = require('mini-css-extract-plugin');
+const path = require("path");
+const CssPlugin = require("mini-css-extract-plugin");
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 module.exports = {
-  mode: 'development',
-  plugins: [new CssPlugin({filename: 'bundle.css'})],
-  entry: './public/js/Application.js',
+  mode: "development",
+  plugins: [new CssPlugin({ filename: "bundle.css" })],
+  entry: "./public/js/Application.js",
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public/dist'),
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "public/dist"),
   },
   ignoreWarnings: [
     {
-      message: /Critical dependency: the request of a dependency is an expression/,
+      message:
+        /Critical dependency: the request of a dependency is an expression/,
     },
   ],
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: [".ts", ".js"],
     alias: {
-          '@root': path.resolve(__dirname, ''),
-          '@vendor': path.resolve(__dirname, './vendor/cheerios'),
+      "@root": path.resolve(__dirname, ""),
+      "@vendor": path.resolve(__dirname, "./vendor/cheerios"),
     },
+    plugins: [new TsconfigPathsPlugin({ configFile: "./tsconfig.json" })],
   },
   module: {
     rules: [
       {
         test: /\.ts$/,
-        use: 'ts-loader',
+        use: "ts-loader",
         exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        use: [CssPlugin.loader, 'css-loader']
-      }
+        use: [CssPlugin.loader, "css-loader"],
+      },
     ],
   },
 };

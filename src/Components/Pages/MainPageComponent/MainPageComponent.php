@@ -6,5 +6,5 @@ use DumpsterfirePages\PageComponent;
 
 class MainPageComponent extends PageComponent
 {
-    
+
 }

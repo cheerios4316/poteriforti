@@ -2,6 +2,15 @@
 
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     font-family: 'Montserrat', sans-serif;
+    @apply bg-neutral-900
+}
+
+code {
+    @apply bg-neutral-700 p-[2px] py-px rounded-xs;
 }

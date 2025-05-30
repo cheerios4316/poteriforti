@@ -10,24 +10,27 @@
     "build:ts": "npx tsc",
     "build:webpack": "npx webpack",
     "build:all": "npm run build:tailwind && npm run build:ts && npm run build:webpack",
-    "build:watch": "concurrently \"npx tsc --watch\" \"webpack --watch\" \"npx tailwindcss -i ./tailwind/init.css -o ./public/dist/tailwind.css --watch\""
+    "build:watch": "concurrently \"npx tsc --watch\" \"webpack --watch\" \"npx tailwindcss -i ./tailwind/init.css -o ./public/dist/tailwind.css --watch\"",
+    "wp:ts": "npm run build:ts && npm run build:webpack",
+    "wp:tailwind": "npm run build:tailwind && npm run build:webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.15",
-    "autoprefixer": "^10.4.21",
-    "css-loader": "^7.1.2",
     "jquery": "^3.7.1",
     "mini-css-extract-plugin": "^2.9.2"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.15",
     "@types/jquery": "^3.5.32",
+    "autoprefixer": "^10.4.21",
     "concurrently": "^9.1.2",
-    "postcss": "^8.5.3",
+    "css-loader": "^7.1.2",
+    "postcss": "^8.5.4",
     "tailwindcss": "^4.1.8",
     "ts-loader": "^9.5.2",
+    "tsconfig-paths-webpack-plugin": "^4.2.0",
     "typescript": "^5.8.2",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1"
