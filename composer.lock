@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cheerios4316/dumpsterfire-pages.git",
-                "reference": "216cdd9bfc8a3ff0df7bc094faeb0fd113591c0b"
+                "reference": "26e6abac82fe7d4aa381bce3ca71308d22385502"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cheerios4316/dumpsterfire-pages/zipball/216cdd9bfc8a3ff0df7bc094faeb0fd113591c0b",
-                "reference": "216cdd9bfc8a3ff0df7bc094faeb0fd113591c0b",
+                "url": "https://api.github.com/repos/cheerios4316/dumpsterfire-pages/zipball/26e6abac82fe7d4aa381bce3ca71308d22385502",
+                "reference": "26e6abac82fe7d4aa381bce3ca71308d22385502",
                 "shasum": ""
             },
             "default-branch": true,
@@ -40,7 +40,7 @@
                 "source": "https://github.com/cheerios4316/dumpsterfire-pages/tree/main",
                 "issues": "https://github.com/cheerios4316/dumpsterfire-pages/issues"
             },
-            "time": "2025-05-30T19:04:12+00:00"
+            "time": "2025-05-31T15:46:04+00:00"
         },
         {
             "name": "filp/whoops",

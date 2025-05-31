@@ -31,6 +31,11 @@ $controllerNameString = htmlspecialchars("<controller name>");
      * cool that you're reading this :)
      */
     ?>
+    <div class="flex flex-col items-center justify-center text-red-600 font-bold text-3xl">
+        <span>DO NOT TRUST THIS YET. THIS IS (mostly) ALL FAKE</span>
+        <span>THE ONLY EXISTING NPX COMMAND IS <code>npx create-dumpsterfire-app</code></span>
+        <span>CHECK FOR EXISTENCE OF MENTIONED NPM SCRIPTS IN <code>package.json</code></span>
+    </div>
     <div class="flex justify-between mx-48 mb-8">
     <?php foreach($this->getLinkComponents() as $component) {
         $component->render();
