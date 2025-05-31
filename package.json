@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "project:setup": "composer clear-cache && composer upgrade && npm install --verbose",
+    "project:setup": "composer clear-cache && composer upgrade && npm install --verbose && npm run build:all",
     "build:tailwind": "npx tailwindcss -i ./tailwind/init.css -o ./public/dist/tailwind.css",
     "build:ts": "npx tsc",
     "build:webpack": "npx webpack",
