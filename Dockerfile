@@ -20,9 +20,11 @@ WORKDIR /var/www/html
 COPY . .
 
 # Install PHP and JS dependencies
-RUN composer update && \
-    composer install --no-dev --optimize-autoloader && \
-    npm install
+RUN composer clear-cache && \
+    composer update && \
+    composer install && \
+    npm install && \
+    npm install tailwindcss
 
 
 # Expose port 80
