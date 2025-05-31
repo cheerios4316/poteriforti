@@ -21,7 +21,7 @@ module.exports = {
     alias: {
       "@root": path.resolve(__dirname, ""),
       "@vendor": path.resolve(__dirname, "./vendor/cheerios"),
-      "@compiled": path.resolve(__dirname, "./public/js/src/vendor/cheerios/dumpsterfire-pages/src/js")
+      "@compiled": path.resolve(__dirname, "./public/js/vendor/cheerios/dumpsterfire-pages/src/js")
     },
     plugins: [new TsconfigPathsPlugin({ configFile: "./tsconfig.json" })],
   },
