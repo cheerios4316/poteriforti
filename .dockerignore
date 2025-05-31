@@ -1,7 +1,6 @@
 .git
 .idea
 node_modules
-vendor
 *.log
 *.env
 .DS_Store
