@@ -5,7 +5,7 @@ const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 module.exports = {
   mode: "development",
   plugins: [new CssPlugin({ filename: "bundle.css" })],
-  entry: "./public/js/Application.js",
+  entry: "./public/js/vendor/cheerios/dumpsterfire-pages/src/js/Application.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "public/dist"),
@@ -21,6 +21,7 @@ module.exports = {
     alias: {
       "@root": path.resolve(__dirname, ""),
       "@vendor": path.resolve(__dirname, "./vendor/cheerios"),
+      "@compiled": path.resolve(__dirname, "./public/js/src/vendor/cheerios/dumpsterfire-pages/src/js")
     },
     plugins: [new TsconfigPathsPlugin({ configFile: "./tsconfig.json" })],
   },

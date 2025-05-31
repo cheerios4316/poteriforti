@@ -31,6 +31,11 @@ $controllerNameString = htmlspecialchars("<controller name>");
      * cool that you're reading this :)
      */
     ?>
+    <div class="flex justify-between mx-48 mb-8">
+    <?php foreach($this->getLinkComponents() as $component) {
+        $component->render();
+    } ?>
+    </div>
 
     <div class="bg-neutral-800 rounded-xl border-b-2 border-neutral-700 p-4 text-neutral-200 sm:mr-40 xl:mr-80 mb-8">
         <h2 class="mb-2 text-orange-500 text-xl">Get started</h2>
