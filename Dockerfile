@@ -4,7 +4,11 @@ FROM php:8.4-apache
 RUN a2enmod rewrite
 
 # Install dependencies
-RUN apt-get update && apt-get install -y curl bash unzip git
+RUN apt-get update && apt-get install -y \
+    curl bash unzip git \
+    default-mysql-client \
+    libpng-dev libzip-dev libonig-dev \
+    && docker-php-ext-install pdo pdo_mysql
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php && \
