@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cheerios4316/dumpsterfire-pages.git",
-                "reference": "26e6abac82fe7d4aa381bce3ca71308d22385502"
+                "reference": "943f45dfb81c6c9c11a110d90c2bcca7f32d6094"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cheerios4316/dumpsterfire-pages/zipball/26e6abac82fe7d4aa381bce3ca71308d22385502",
-                "reference": "26e6abac82fe7d4aa381bce3ca71308d22385502",
+                "url": "https://api.github.com/repos/cheerios4316/dumpsterfire-pages/zipball/943f45dfb81c6c9c11a110d90c2bcca7f32d6094",
+                "reference": "943f45dfb81c6c9c11a110d90c2bcca7f32d6094",
                 "shasum": ""
             },
             "default-branch": true,
@@ -40,20 +40,20 @@
                 "source": "https://github.com/cheerios4316/dumpsterfire-pages/tree/main",
                 "issues": "https://github.com/cheerios4316/dumpsterfire-pages/issues"
             },
-            "time": "2025-05-31T15:46:04+00:00"
+            "time": "2025-07-20T12:47:23+00:00"
         },
         {
             "name": "filp/whoops",
-            "version": "2.18.0",
+            "version": "2.18.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e"
+                "reference": "59a123a3d459c5a23055802237cb317f609867e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e",
-                "reference": "a7de6c3c6c3c022f5cfc337f8ede6a14460cf77e",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/59a123a3d459c5a23055802237cb317f609867e5",
+                "reference": "59a123a3d459c5a23055802237cb317f609867e5",
                 "shasum": ""
             },
             "require": {
@@ -103,7 +103,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.18.0"
+                "source": "https://github.com/filp/whoops/tree/2.18.3"
             },
             "funding": [
                 {
@@ -111,7 +111,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-15T12:00:00+00:00"
+            "time": "2025-06-16T00:02:10+00:00"
         },
         {
             "name": "graham-campbell/result-type",

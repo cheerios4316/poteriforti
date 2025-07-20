@@ -9,6 +9,8 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
+      "@compiled/*": ["vendor/cheerios/dumpsterfire-pages/src/js/*"],
+      "@root/*": ["./*"],
       "dumpsterfire/Component": [
         "./vendor/cheerios/dumpsterfire-pages/src/js/Component.ts"
       ]

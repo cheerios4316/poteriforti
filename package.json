@@ -1,5 +1,5 @@
 {
-  "name": "poteriforti",
+  "name": "Your Dumpsterfire App",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,16 +8,18 @@
     "project:setup": "composer clear-cache && composer upgrade && npm install --verbose && npm run build:all",
     "build:tailwind": "npx tailwindcss -i ./tailwind/init.css -o ./public/dist/tailwind.css",
     "build:ts": "npx tsc",
-    "build:webpack": "npx webpack",
-    "build:all": "npm run build:tailwind && npm run build:ts && npm run build:webpack",
-    "build:watch": "concurrently \"npx tsc --watch\" \"webpack --watch\" \"npx tailwindcss -i ./tailwind/init.css -o ./public/dist/tailwind.css --watch\"",
-    "wp:ts": "npm run build:ts && npm run build:webpack",
-    "wp:tailwind": "npm run build:tailwind && npm run build:webpack"
+    "build:js": "node build-scripts/esbuild.config.mjs",
+    "watch:js": "node build-scripts/esbuild.config.mjs --watch",
+    "build:css": "npm run build:tailwind && node build-scripts/esbuild.css.mjs",
+    "watch:css": "node build-scripts/watch.css.mjs",
+    "watch:all": "concurrently \"npm:watch:css\" \"npm:watch:js\"",
+    "build:all": "npm run build:css && npm run build:js"
   },
-  "author": "",
+  "author": "<your name>",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.15",
+    "glob": "^11.0.3",
     "jquery": "^3.7.1",
     "mini-css-extract-plugin": "^2.9.2"
   },
@@ -25,14 +27,15 @@
     "@tailwindcss/cli": "^4.0.15",
     "@types/jquery": "^3.5.32",
     "autoprefixer": "^10.4.21",
+    "chokidar": "^4.0.3",
+    "chokidar-cli": "^3.0.0",
     "concurrently": "^9.1.2",
     "css-loader": "^7.1.2",
+    "esbuild": "^0.25.8",
+    "esbuild-plugin-alias": "^0.2.1",
     "postcss": "^8.5.4",
     "tailwindcss": "^4.1.8",
     "ts-loader": "^9.5.2",
-    "tsconfig-paths-webpack-plugin": "^4.2.0",
-    "typescript": "^5.8.2",
-    "webpack": "^5.98.0",
-    "webpack-cli": "^6.0.1"
+    "typescript": "^5.8.2"
   }
 }
