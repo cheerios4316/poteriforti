@@ -1,6 +1,6 @@
-import cssImportsPlugin from "./dynamic-imports-plugin.mjs";
 import { context } from "esbuild";
 import { argv } from "node:process";
+import dynamicImportsPlugin from "./dynamic-imports-plugin.mjs";
 
 const watch = argv.includes("--watch");
 
@@ -22,7 +22,7 @@ const ctx = await context({
   define: {
     "process.env.NODE_ENV": '"development"',
   },
-  plugins: [cssImportsPlugin()],
+  plugins: [dynamicImportsPlugin()],
 });
 
 if (watch) {
