@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.15",
+    "create-dumpsterfire-app": "^1.2.1",
     "glob": "^11.0.3",
     "jquery": "^3.7.1",
     "mini-css-extract-plugin": "^2.9.2"
